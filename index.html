@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Task List App</h1>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <ul id="task-list">
+                <!-- tasks will be rendered here -->
+            </ul>
+            <button id="add-task-btn">Add Task</button>
+        </section>
+        <section class="task-form" id="task-form">
+            <h2>Add Task</h2>
+            <form>
+                <label for="task-title">Title:</label>
+                <input type="text" id="task-title" required><br><br>
+                <label for="task-description">Description:</label>
+                <textarea id="task-description" required></textarea><br><br>
+                <label for="task-due-date">Due Date:</label>
+                <input type="date" id="task-due-date" required><br><br>
+                <label for="task-status">Status:</label>
+                <select id="task-status" required>
+                    <option value="to-do">To-Do</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="done">Done</option>
+                </select><br><br>
+                <button id="submit-task-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
